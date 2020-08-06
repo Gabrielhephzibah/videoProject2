@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    tools:context=".WeatherApp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:text="Ask me about THE WEATHER"
+        android:textColor="#fff"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="23dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            android:gravity="center_horizontal"
+            android:text="Enter a city......"
+            android:textColor="#fff"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/edit_line_color"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/weatherBtn"
+                    android:onClick="getWeather"
+                    android:layout_marginTop="23dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/change_text_color"
+                    android:textSize="16sp"
+                    android:text="What's the weather"
+                    android:background="@drawable/change_button_color">
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="What's the weather"-->
+<!--                        android:paddingTop="6dp"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                       android:textStyle="bold"-->
+<!--                        android:textSize="18sp"/>-->
+                </Button>
+
+        <TextView
+            android:id="@+id/rain"
+            android:layout_marginTop="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+<!--        <TextView-->
+<!--            android:id="@+id/cloud"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cloud:cloudy"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="23dp"-->
+<!--            android:textColor="#fff"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/temperature"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Temperature:cloudy"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="23dp"-->
+<!--            android:textColor="#fff"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pressure"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Pressure:cloudy"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="23dp"-->
+<!--            android:textColor="#fff"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/humidity"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Humidity:cloudy"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="23dp"-->
+<!--            android:textColor="#fff"-->
+<!--            />-->
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
